@@ -52,3 +52,26 @@
 |wmocode|INT||Yes|Stations WMO code|
 |longitude|NUMERIC||Yes|Station location cordinate|
 |latitude|NUMERIC||Yes|Station location cordinate|
+
+### station_observations
+
+| Column | Data type | Key | Nullable | Description |
+| -------- | ------- | -------- | ------- | -------- |
+|ID|BIGINT|PK|No|Unique station observation id|
+|observations_id|BIGINT|FK|No|Refrences observations.id|
+|station_id|BIGINT|FK|No|Refrences station.id|
+|phenomenon|VARCHAR(100)||Yes|Weather phenomenon occurring at the station|
+|visibility|NUMERIC||Yes|Visibility (km)|
+|precipitations|NUMERIC||Yes|Precipitation (mm)|
+|airpressure|NUMERIC||Yes|Air pressure (hPa)|
+|relativehumidity|NUMERIC||Yes|Relative humidity (%)|
+|airtemperature|NUMERIC||Yes|Air temperature (°C)|
+|winddirection|NUMERIC||Yes|Wind direction (°)|
+|windspeed|NUMERIC||Yes|Average wind speed (m/s)|
+|windspeedmax|NUMERIC||Yes|Maximum wind speed or gusts (m/s)|
+|waterlevel|NUMERIC||Yes|Water level of inland waters (cm) relative to Amsterdam zero|
+|waterlevel_eh2000|NUMERIC||Yes|Sea water level (cm) relative to Amsterdam zero|
+|watertemperature|NUMERIC||Yes|Water temperature (°C)|
+|uvindex|NUMERIC||Yes|UV index|
+|sunshineduration|NUMERIC||Yes|Daily sunshine duration (min) on the day of the query|
+|globalradiation|NUMERIC||Yes|Total radiation, 1 hour average (W/m 2 )|
