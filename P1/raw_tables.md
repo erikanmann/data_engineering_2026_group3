@@ -42,3 +42,13 @@
 | -------- | ------- | -------- | ------- | -------- |
 |ID|BIGINT|PK|No|Unique observation id|
 |timestamp|BIGINT||No|Unique timestamp for observation|
+
+### stations
+
+| Column | Data type | Key | Nullable | Description |
+| -------- | ------- | -------- | ------- | -------- |
+|ID|BIGINT|PK|No|Unique station id|
+|name|VARCHAR(100)||No|Name of the station|
+|wmocode|INT||Yes|Stations WMO code|
+|longitude|NUMERIC||Yes|Station location cordinate|
+|latitude|NUMERIC||Yes|Station location cordinate|
