@@ -14,7 +14,7 @@
 
 | Column | Data type | Key | Nullable | Description |
 | -------- | ------- | -------- | ------- | -------- |
-| timestamp |BIGINT | PK |   |   | Unix timestamp |
+| timestamp |BIGINT | PK |   |Unix timestamp |
 | date_and_time | DATETIME |   |   | Observation time |
 | production | DECIMAL(8,1) |   |   | Actual electricity production |
 | consumption | DECIMAL(8,1) |   |   | Actual electricity consumption |
@@ -32,3 +32,13 @@
 | planned_losses | DECIMAL(8,1) ||Yes|Planned electricity losses|
 | planned_balance | DECIMAL(8,1) ||Yes|Planned system balance|
 | Planned_AC_balance | DECIMAL(8,1) ||Yes|Planned alternating-current balance|||
+
+
+## Estonian Environment Agency
+
+### observations
+
+| Column | Data type | Key | Nullable | Description |
+| -------- | ------- | -------- | ------- | -------- |
+|ID|BIGINT|PK|No|Unique observation id|
+|timestamp|BIGINT||No|Unique timestamp for observation|
