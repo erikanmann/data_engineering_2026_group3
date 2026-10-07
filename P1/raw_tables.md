@@ -6,20 +6,20 @@
 
 |Column|Data type|Key|Nullable|Description|
 |--------|-------|--------|-------|--------|
-|timestamp|BIGINT|PK||Unix timestamp|
-|date_and_time|DATETIME|||Observation time|
-|NPS_Estonia|DECIMAL(8,2)|||Nord Pool electricity price in Estonia|
+|timestamp|BIGINT|PK|No|Unix timestamp|
+|date_and_time|DATETIME||No|Observation time|
+|NPS_Estonia|DECIMAL(8,2)||No|Nord Pool electricity price in Estonia|
 
 ### electricity_system_data
 
 |Column|Data type|Key|Nullable|Description|
 |--------|-------|--------|-------|--------|
-|timestamp|BIGINT|PK||Unix timestamp|
-|date_and_time|DATETIME|||Observation time|
-|production|DECIMAL(8,1)|||Actual electricity production|
-|consumption|DECIMAL(8,1)|||Actual electricity consumption|
-|wind_prod|DECIMAL(8,1)|||Electricity produced by wind farms|
-|solar_prod|DECIMAL(8,1)|||Electricity produced by solar farms|
+|timestamp|BIGINT|PK|No|Unix timestamp|
+|date_and_time|DATETIME||No|Observation time|
+|production|DECIMAL(8,1)||No|Actual electricity production|
+|consumption|DECIMAL(8,1)||No|Actual electricity consumption|
+|wind_prod|DECIMAL(8,1)||No|Electricity produced by wind farms|
+|solar_prod|DECIMAL(8,1)||No|Electricity produced by solar farms|
 |solar_prod_forecast|DECIMAL(8,1)||Yes|Forecast of solar production|
 |solar_prod_forecast2|DECIMAL(8,1)||Yes|Solar production forecast made by the system operator|
 |frequency|DECIMAL(8,1)||Yes|System frequency|
