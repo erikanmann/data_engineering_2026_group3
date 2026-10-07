@@ -141,7 +141,7 @@ ORDER BY
 WITH PriceClassification AS (
     SELECT
         CASE
-            WHEN Price <= 5 THEN 1.0
+            WHEN Price <= 5 THEN 1.0  -- This is low price threshold, it can also be changed
             ELSE 0.0
         END AS NearZeroPrice,
 
