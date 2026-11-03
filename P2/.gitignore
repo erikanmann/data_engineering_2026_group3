@@ -2,7 +2,7 @@
 logs/
 
 # Postgres data directories (Docker volumes on host)
-pgdata_retail/
+pgdata_project/
 pgdata_airflow/
 
 # dbt build artefacts
